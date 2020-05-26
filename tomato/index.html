@@ -12,21 +12,22 @@
 </head>
 
 <body>
-    <header>
-        <div class="header__logo"><img src="img/logo.svg" alt=""></div>
+    <header class="header">
+        <div class="header__wrap container">
+            <div class="header__logo" style="background-image: url('img/logo.svg');"></div>
+
+            <ul class="header__menu">
+                <li>Settings</li>
+                <li>FAQ</li>
+            </ul>
+        </div>
+        
     </header>
     <section class="viewer-block">
-        <h1 class="viewer-block__header">
-            <span class="viewer-block__item jsViewerBlockItem">T</span>
-            <span class="viewer-block__item jsViewerBlockItem">O</span>
-            <span class="viewer-block__item jsViewerBlockItem">M</span>
-            <span class="viewer-block__item jsViewerBlockItem">A</span>
-            <span class="viewer-block__item jsViewerBlockItem">T</span>
-            <span class="viewer-block__item jsViewerBlockItem">O</span>
-        </h1>
+
     </section>
 
-    <section class="control">
+    <section class="control container">
         <ul class="control__mode">
             <li class="control__mode-item jsControlModeItem" data-value="1500">POMODORO</li>
             <li class="control__mode-item jsControlModeItem" data-value="300">SHORT BREAK</li>
@@ -44,9 +45,9 @@
         </div>
 
         <ul class="control__panel">
-            <li><button class="control__panel-item jsControlPanelItemReset">reset</button></li>
-            <li><button class="control__panel-item jsControlPanelItemStart">start</button></li>
-            <li><button class="control__panel-item jsControlPanelItemPause">pause</button></li>
+            <li><button style="background-color: #EB4242;" class="control__panel-item jsControlPanelItemReset">reset</button></li>
+            <li><button style="background-color: #008777;" class="control__panel-item jsControlPanelItemStart">start</button></li>
+            <li><button style="background-color: #416DC7;" class="control__panel-item jsControlPanelItemPause">pause</button></li>
         </ul>
     </section>
 
