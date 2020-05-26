@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/viewer-block.css">
+    <link rel="stylesheet" href="css/tomato.css">
+    <script src="js/asd.js" defer></script>
+    <script src="js/tomato-logic.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header__logo"><img src="img/logo.svg" alt=""></div>
+    </header>
+    <section class="viewer-block">
+        <h1 class="viewer-block__header">
+            <span class="viewer-block__item jsViewerBlockItem">T</span>
+            <span class="viewer-block__item jsViewerBlockItem">O</span>
+            <span class="viewer-block__item jsViewerBlockItem">M</span>
+            <span class="viewer-block__item jsViewerBlockItem">A</span>
+            <span class="viewer-block__item jsViewerBlockItem">T</span>
+            <span class="viewer-block__item jsViewerBlockItem">O</span>
+        </h1>
+    </section>
+
+    <section class="control">
+        <ul class="control__mode">
+            <li class="control__mode-item jsControlModeItem" data-value="1500">POMODORO</li>
+            <li class="control__mode-item jsControlModeItem" data-value="300">SHORT BREAK</li>
+            <li class="control__mode-item jsControlModeItem" data-value="900">LONG BREAK</li>
+        </ul>
+
+        <div class="control__time">
+            <button class="control__time-button jsControlTimeButton" data-sign="-">-</button>
+            <div class="control__time-display jsMainTimeItem">
+                <span class="jsControlTimeMin">25</span>
+                <span>:</span>
+                <span class="jsControlTimeSec">00</span>
+            </div>
+            <button class="control__time-button jsControlTimeButton" data-sign="+">+</button>
+        </div>
+
+        <ul class="control__panel">
+            <li><button class="control__panel-item jsControlPanelItemReset">reset</button></li>
+            <li><button class="control__panel-item jsControlPanelItemStart">start</button></li>
+            <li><button class="control__panel-item jsControlPanelItemPause">pause</button></li>
+        </ul>
+    </section>
+
+    <footer></footer>
+</body>
+
+</html>
