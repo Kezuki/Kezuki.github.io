@@ -9,6 +9,7 @@ const jsControlPanelItemPause = document.querySelector('.jsControlPanelItemPause
 let interval,
     timer = {
         startTime: 1500,
+        currentTime: 1500,
         status: 'stop',
 
         convert: function (time) {
@@ -16,7 +17,7 @@ let interval,
             let seconds = time % 60;
 
             if (seconds < 10) {
-                seconds = '0' + seconds
+                seconds = '0' + seconds;
             }
 
             return {
@@ -28,17 +29,17 @@ let interval,
         startCount: function (func) {
             timer.status = 'run';
             return setInterval(function () {
-                func(--timer.startTime)
+                func(--timer.currentTime);
             }, 1000);
         },
 
         stopCount: function (count) {
             timer.status = 'stop';
-            clearInterval(count)
+            clearInterval(count);
         },
 
         setTime: function (param) {
-            var timeObj = timer.convert(param)
+            let timeObj = timer.convert(param);
             jsControlTimeMin.textContent = timeObj.minute;
             jsControlTimeSec.textContent = timeObj.second;
         },
@@ -48,31 +49,30 @@ let interval,
 
 jsControlModeItem.forEach(function (elem) {
     elem.addEventListener('click', function () {
-        timer.stopCount(interval)
-        timer.startTime = +this.getAttribute('data-value');
-        timer.setTime(timer.startTime)
+        timer.stopCount(interval);
+        let attr = Number(this.getAttribute('data-value'));
+        timer.startTime = attr;
+        timer.setTime(timer.currentTime = attr)
     });
 });
 
 jsControlPanelItemStart.addEventListener('click', function () {
     if (timer.status === 'run') return false;
-    interval = timer.startCount(timer.setTime)
+    interval = timer.startCount(timer.setTime);
 });
 
 jsControlTimeButton.forEach(function (elem) {
     elem.addEventListener('click', function () {
-        var sign = this.getAttribute('data-sign') + 60;
-        timer.startTime += +sign;
-        timer.setTime(+timer.startTime)
+        let sign = Number(this.getAttribute('data-sign') + 60);
+        timer.setTime(timer.currentTime += sign);
     });
 });
 
 jsControlPanelItemPause.addEventListener('click', function () {
-    timer.stopCount(interval)
+    timer.stopCount(interval);
 });
 
 jsControlPanelItemReset.addEventListener('click', function () {
-    timer.stopCount(interval)
-    timer.startTime = 1500;
-    timer.setTime(timer.startTime)
+    timer.stopCount(interval);
+    timer.setTime(timer.currentTime = timer.startTime);
 });
