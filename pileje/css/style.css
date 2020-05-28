@@ -106,6 +106,10 @@ li {
     padding: 0 8.6rem;
 }
 
+.container_content {
+    padding: 6.5rem 8.6rem;
+}
+
 .container_sm {
     padding: 0 6rem;
 }
@@ -142,6 +146,14 @@ li {
     font-size: 2.2rem;
 }
 
+.text_sm {
+    font-size: 1.8rem;
+}
+
+.text_s {
+    font-size: 1.6rem;
+}
+
 .text_pink {
     color: #EB008B;
 }
@@ -156,6 +168,68 @@ li {
 
 .text_mb20 {
     margin-bottom: 2rem;
+}
+
+.text_mb50 {
+    margin-bottom: 5rem;
+}
+
+.text_ls0 {
+    letter-spacing: 0;
+}
+
+.mx800 {
+    max-width: 80rem;
+}
+
+.text-img {
+    width: 100%;
+    max-width: 50rem;
+}
+
+.text-img_right {
+    float: right;
+    margin-left: 2rem;
+}
+
+.text-img_left {
+    float: left;
+    margin-right: 2rem;
+}
+
+.clear {
+    clear: both;
+}
+
+.title {
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 6rem;
+    height: 0.5rem;
+    left: 0;
+    bottom: 0;
+}
+
+.title_blue {
+    color: #002D5C;
+}
+
+.title_blue::before {
+    background-color: #002D5C;
+}
+
+.title_pink {
+    color: #EB008B;
+}
+
+.title_pink::before {
+    background-color: #EB008B;
 }
 
 .section {
@@ -407,7 +481,7 @@ li {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
     min-height: calc(100vh - 9.8rem);
-  
+
 }
 
 .catalog__header {
@@ -447,4 +521,39 @@ li {
 .catalog__text {
     align-self: flex-start;
     margin: 4rem 0;
+}
+
+
+/* ==================================card======================================= */
+
+.card {
+    display: flex;
+}
+
+.card__title {
+    margin: 2rem 0 4rem;
+}
+
+.card__table {
+    width: 100%;
+    text-align: left;
+    border-spacing: 0;
+    margin: 3rem 0 1.6rem;
+}
+
+.card__table th {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.card__table tr {}
+
+.card__table tbody tr:nth-of-type(2n + 1) {
+    background: #FDDEED;
+}
+
+.card__table th,
+td {
+    height: 3rem;
+    padding: 0 1rem;
 }
