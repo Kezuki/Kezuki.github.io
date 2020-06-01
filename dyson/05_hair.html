@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="stylesheet" href="css/style.css">
     <title>Dyson</title>
+    <script src="../JSLibrary/js/app.js"></script>
 </head>
 
 <body class="body_font-dark">
@@ -31,60 +33,63 @@
                 </div>
             </div>
         </div>
-        
+
     </header>
 
-    <section class="section section_half section_bb " style="background-image: url('img/bg/hair-bg.jpg');">
-        <div class="section__top">
-            <ul class="breadcrumb breadcrumb_black">
-                <li class="breadcrumb__item"><a href="#slide1" data-link="01_home.html">Home</a></li>
-                <li class="breadcrumb__item"><a href="#slide2" data-link="02_products.html">Products</a></li>
-                <li class="breadcrumb__item"><a href="#">Hair cares</a></li>
-            </ul>
+    <div class="wrapper">
 
-            <div class="switch">
-                <div class="switch__item jsSwitchItem switch__item_act">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M10.59 4.59C10.21 4.21 9.7 4 9.17 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V8C22 6.9 21.1 6 20 6H12L10.59 4.59Z" />
-                    </svg>
-                </div>
-                <div class="switch__item jsSwitchItem">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M2.75 6C2.75 5.17 3.42 4.5 4.25 4.5C5.08 4.5 5.75 5.17 5.75 6C5.75 6.83 5.08 7.5 4.25 7.5C3.42 7.5 2.75 6.83 2.75 6ZM2.75 12C2.75 11.17 3.42 10.5 4.25 
+        <section class="section section_half section_bb " style="background-image: url('img/bg/hair-bg.jpg');">
+            <div class="section__top">
+                <ul class="breadcrumb breadcrumb_black">
+                    <li class="breadcrumb__item"><a href="#slide1" data-link="01_home.html">Home</a></li>
+                    <li class="breadcrumb__item"><a href="#slide2" data-link="02_products.html">Products</a></li>
+                    <li class="breadcrumb__item"><a href="#">Hair cares</a></li>
+                </ul>
+
+                <div class="switch">
+                    <div class="switch__item jsSwitchItem switch__item_act">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.59 4.59C10.21 4.21 9.7 4 9.17 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V8C22 6.9 21.1 6 20 6H12L10.59 4.59Z" />
+                        </svg>
+                    </div>
+                    <div class="switch__item jsSwitchItem">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.75 6C2.75 5.17 3.42 4.5 4.25 4.5C5.08 4.5 5.75 5.17 5.75 6C5.75 6.83 5.08 7.5 4.25 7.5C3.42 7.5 2.75 6.83 2.75 6ZM2.75 12C2.75 11.17 3.42 10.5 4.25 
                             10.5C5.08 10.5 5.75 11.17 5.75 12C5.75 12.83 5.08 13.5 4.25 13.5C3.42 13.5 2.75 12.83 2.75 12ZM4.25 16.5C3.42 16.5 2.75 17.18 2.75 18C2.75 18.82 3.43 19.5 
                             4.25 19.5C5.07 19.5 5.75 18.82 5.75 18C5.75 17.18 5.08 16.5 4.25 16.5ZM20.25 19H8.25C7.7 19 7.25 18.55 7.25 18C7.25 17.45 7.7 17 8.25 17H20.25C20.8 17 21.25 17.45 
                             21.25 18C21.25 18.55 20.8 19 20.25 19ZM8.25 13H20.25C20.8 13 21.25 12.55 21.25 12C21.25 11.45 20.8 11 20.25 11H8.25C7.7 11 7.25 11.45 7.25 12C7.25 12.55 7.7 13 8.25
                              13ZM8.25 7C7.7 7 7.25 6.55 7.25 6C7.25 5.45 7.7 5 8.25 5H20.25C20.8 5 21.25 5.45 21.25 6C21.25 6.55 20.8 7 20.25 7H8.25Z" />
-                    </svg>
+                        </svg>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="title">Less reliance on heat, to help protect against extreme heat damage.</div>
-        <div>Discover Dyson hair care technology.</div>
+            <div class="title">Less reliance on heat, to help protect against extreme heat damage.</div>
+            <div>Discover Dyson hair care technology.</div>
 
-    </section>
+        </section>
 
-    <section class="catalog container jsSwitchElem" data-active="catalog_list">
-        <a href="#slide6" data-link="06_hair.html" class="catalog__item">
-            <div class="catalog__item-img" style="background-image: url('img/catalog/h_13.jpg');"></div>
-            <div class="catalog__item-bot">Dyson Corrale™ straightener</div>
-        </a>
+        <section class="catalog container jsSwitchElem" data-active="catalog_list">
+            <a href="#slide6" data-link="06_hair.html" class="catalog__item">
+                <div class="catalog__item-img" style="background-image: url('img/catalog/h_13.jpg');"></div>
+                <div class="catalog__item-bot">Dyson Corrale™ straightener</div>
+            </a>
 
-        <a href="#" class="catalog__item">
-            <div class="catalog__item-img" style="background-image: url('img/catalog/h_14.jpg');"></div>
-            <div class="catalog__item-bot">Dyson Supersonic™ hair dryer</div>
-        </a>
+            <a href="#" class="catalog__item">
+                <div class="catalog__item-img" style="background-image: url('img/catalog/h_14.jpg');"></div>
+                <div class="catalog__item-bot">Dyson Supersonic™ hair dryer</div>
+            </a>
 
-        <a href="#" class="catalog__item">
-            <div class="catalog__item-img" style="background-image: url('img/catalog/h_15.jpg');"></div>
-            <div class="catalog__item-bot">Dyson Airwrap™ styler</div>
-        </a>
+            <a href="#" class="catalog__item">
+                <div class="catalog__item-img" style="background-image: url('img/catalog/h_15.jpg');"></div>
+                <div class="catalog__item-bot">Dyson Airwrap™ styler</div>
+            </a>
 
-    </section>
+        </section>
 
+    </div>
     <script src="vendor/jquery-3.5.1.min.js"></script>
     <script src="js/script.js"></script>
 </body>

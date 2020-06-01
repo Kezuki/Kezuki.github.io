@@ -3,7 +3,10 @@
     margin: 0;
     box-sizing: border-box;
     outline: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: none;
 }
 
 @font-face {
@@ -27,10 +30,15 @@
     font-style: normal;
 }
 
+html {
+    font-size: 0.83755vw;
+}
+
 body {
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     overflow-x: hidden;
+    overflow-y: auto;
     font-family: 'Futura PT';
     font-size: 1.51vw;
     position: relative;
@@ -39,20 +47,15 @@ body {
     padding-top: 4.86vw;
 }
 
-.body_font-dark {
-    color: #000;
+.wrapper {
+    width: 100vw;
+    height: calc(100vh - 5.8rem);
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
-.body__bgc {
-    display: block;
-    background-size: cover;
-    background-position: center;
-    position: fixed;
-    left: 0;
-    height: 100%;
-    bottom: 0;
-    width: 100%;
-    z-index: -1;
+.body_font-dark {
+    color: #000;
 }
 
 a {
@@ -80,7 +83,6 @@ li {
     margin-top: 6vw;
     max-width: 49vw;
 }
-
 
 .container {
     padding: 0 4.36vw;
@@ -134,7 +136,6 @@ li {
     transform: translate(-50%, -50%);
 }
 
-
 .category__logo {
     margin: 3.4vw auto 2.9vw;
 }
@@ -143,12 +144,6 @@ li {
     text-align: center;
     margin-bottom: 6.71vw;
 }
-
-
-
-
-
-
 
 
 
@@ -302,6 +297,7 @@ li {
 .switch__item_act svg {
     fill: #ECECEC;
 }
+
 
 /* ====================================hide-switch========================================== */
 
@@ -537,7 +533,7 @@ li {
     align-items: center;
 }
 
-.product_list .product__header  {
+.product_list .product__header {
     margin-top: 0;
 }
 
@@ -549,6 +545,6 @@ li {
     margin-left: 1.7vw;
 }
 
-.product_list .product__list-wrap  {
+.product_list .product__list-wrap {
     margin-bottom: 3.4vw;
 }
