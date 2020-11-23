@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+        integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="info">
+            <div class="info__title">Scenario Editor</div>
+            <div class="info__txt">Create a custom scenario consisting of slides from different presentations. Just
+                simply drag and drop the desired slides and the scenario is ready.</div>
+
+            <div class="info__btn jsInfoBtn"><img src="img/close.svg" alt="Close"></div>
+        </div>
+
+        <div class="editor">
+            <div class="editor__left">
+                <div class="editor__header">
+                    <div class="editor__header-back">
+                        <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 6.75H1M1 6.75L6.5 1M1 6.75L6.5 12" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    Select Slides
+                </div>
+
+                <ul class="editor__selection jsEditorSelection editor__selection_slide">
+                    <li class="slide" data-id="0">
+                        <div class="slide__delete jsSlideDelete"></div>
+                        <div class="slide__img">
+                            <img src="img/pres1.png" alt="">
+                        </div>
+
+                        <div class="slide__name">
+                            <span>Name of slide 1</span>
+                            <div class="slide__name-open jsSlideNameOpen"
+                                data-options='{ "smallBtn" : false,"touch": false,}' data-fancybox data-src="#modal">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="slide" data-id="1">
+                        <div class="slide__delete jsSlideDelete"></div>
+                        <div class="slide__img">
+                            <img src="img/pres2.png" alt="">
+                        </div>
+
+                        <div class="slide__name">
+                            <span>Name of slide 2</span>
+                            <div class="slide__name-open jsSlideNameOpen"
+                                data-options='{ "smallBtn" : false,"touch": false}' data-fancybox data-src="#modal">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="slide" data-id="2">
+                        <div class="slide__delete jsSlideDelete"></div>
+                        <div class="slide__img">
+                            <img src="img/pres3.png" alt="">
+                        </div>
+
+                        <div class="slide__name">
+                            <span>Name of slide 3</span>
+                            <div class="slide__name-open jsSlideNameOpen"
+                                data-options='{ "smallBtn" : false,"touch": false}' data-fancybox data-src="#modal">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="slide" data-id="3">
+                        <div class="slide__delete jsSlideDelete"></div>
+                        <div class="slide__img">
+                            <img src="img/pres4.png" alt="">
+                        </div>
+
+                        <div class="slide__name">
+                            <span>Name of slide 4</span>
+                            <div class="slide__name-open jsSlideNameOpen"
+                                data-options='{ "smallBtn" : false,"touch": false}' data-fancybox data-src="#modal">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="slide" data-id="4">
+                        <div class="slide__delete jsSlideDelete"></div>
+                        <div class="slide__img">
+                            <img src="img/pres5.png" alt="">
+                        </div>
+
+                        <div class="slide__name">
+                            <span>Name of slide 5</span>
+                            <div class="slide__name-open jsSlideNameOpen"
+                                data-options='{ "smallBtn" : false,"touch": false}' data-fancybox data-src="#modal">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="slide" data-id="5">
+                        <div class="slide__delete jsSlideDelete"></div>
+                        <div class="slide__img">
+                            <img src="img/pres1.png" alt="">
+                        </div>
+
+                        <div class="slide__name">
+                            <span>Name of slide 6</span>
+                            <div class="slide__name-open jsSlideNameOpen"
+                                data-options='{ "smallBtn" : false,"touch": false}' data-fancybox data-src="#modal">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="slide" data-id="6">
+                        <div class="slide__delete jsSlideDelete"></div>
+                        <div class="slide__img">
+                            <img src="img/pres2.png" alt="">
+                        </div>
+
+                        <div class="slide__name">
+                            <span>Name of slide 7</span>
+                            <div class="slide__name-open jsSlideNameOpen"
+                                data-options='{ "smallBtn" : false,"touch": false}' data-fancybox data-src="#modal">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="slide" data-id="7">
+                        <div class="slide__delete jsSlideDelete"></div>
+                        <div class="slide__img">
+                            <img src="img/pres3.png" alt="">
+                        </div>
+
+                        <div class="slide__name">
+                            <span>Name of slide 8</span>
+                            <div class="slide__name-open jsSlideNameOpen"
+                                data-options='{ "smallBtn" : false,"touch": false}' data-fancybox data-src="#modal">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="slide" data-id="8">
+                        <div class="slide__delete jsSlideDelete"></div>
+                        <div class="slide__img">
+                            <img src="img/pres4.png" alt="">
+                        </div>
+
+                        <div class="slide__name">
+                            <span>Name of slide 9</span>
+                            <div class="slide__name-open jsSlideNameOpen"
+                                data-options='{ "smallBtn" : false,"touch": false}' data-fancybox data-src="#modal">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="slide" data-id="9">
+                        <div class="slide__delete jsSlideDelete"></div>
+                        <div class="slide__img">
+                            <img src="img/pres5.png" alt="">
+                        </div>
+
+                        <div class="slide__name">
+                            <span>Name of slide 10</span>
+                            <div class="slide__name-open jsSlideNameOpen"
+                                data-options='{ "smallBtn" : false,"touch": false}' data-fancybox data-src="#modal">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="slide" data-id="10">
+                        <div class="slide__delete jsSlideDelete"></div>
+                        <div class="slide__img">
+                            <img src="img/pres1.png" alt="">
+                        </div>
+
+                        <div class="slide__name">
+                            <span>Name of slide 11</span>
+                            <div class="slide__name-open jsSlideNameOpen"
+                                data-options='{ "smallBtn" : false,"touch": false}' data-fancybox data-src="#modal">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="slide" data-id="11">
+                        <div class="slide__delete jsSlideDelete"></div>
+                        <div class="slide__img">
+                            <img src="img/pres2.png" alt="">
+                        </div>
+
+                        <div class="slide__name">
+                            <span>Name of slide 12</span>
+                            <div class="slide__name-open jsSlideNameOpen"
+                                data-options='{ "smallBtn" : false,"touch": false}' data-fancybox data-src="#modal">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="slide" data-id="12">
+                        <div class="slide__delete jsSlideDelete"></div>
+                        <div class="slide__img">
+                            <img src="img/pres3.png" alt="">
+                        </div>
+
+                        <div class="slide__name">
+                            <span>Name of slide 13</span>
+                            <div class="slide__name-open jsSlideNameOpen"
+                                data-options='{ "smallBtn" : false,"touch": false}' data-fancybox data-src="#modal">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="slide" data-id="13">
+                        <div class="slide__delete jsSlideDelete"></div>
+                        <div class="slide__img">
+                            <img src="img/pres4.png" alt="">
+                        </div>
+
+                        <div class="slide__name">
+                            <span>Name of slide 14</span>
+                            <div class="slide__name-open jsSlideNameOpen"
+                                data-options='{ "smallBtn" : false,"touch": false}' data-fancybox data-src="#modal">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="slide" data-id="14">
+                        <div class="slide__delete jsSlideDelete"></div>
+                        <div class="slide__img">
+                            <img src="img/pres5.png" alt="">
+                        </div>
+
+                        <div class="slide__name">
+                            <span>Name of slide 15</span>
+                            <div class="slide__name-open jsSlideNameOpen"
+                                data-options='{ "smallBtn" : false,"touch": false}' data-fancybox data-src="#modal">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="slide" data-id="15">
+                        <div class="slide__delete jsSlideDelete"></div>
+                        <div class="slide__img">
+                            <img src="img/pres4.png" alt="">
+                        </div>
+
+                        <div class="slide__name">
+                            <span>Name of slide 16</span>
+                            <div class="slide__name-open jsSlideNameOpen"
+                                data-options='{ "smallBtn" : false,"touch": false}' data-fancybox data-src="#modal">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="slide" data-id="16">
+                        <div class="slide__delete jsSlideDelete"></div>
+                        <div class="slide__img">
+                            <img src="img/pres5.png" alt="">
+                        </div>
+
+                        <div class="slide__name">
+                            <span>Name of slide 17</span>
+                            <div class="slide__name-open jsSlideNameOpen"
+                                data-options='{ "smallBtn" : false,"touch": false}' data-fancybox data-src="#modal">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="editor__right">
+                <div class="editor__header editor__header_right">
+                    <div class="editor__counter">
+                        Current Scenario Slides (<span class="jsEditorCounterSum">0</span>)
+                    </div>
+
+                    <div class="editor__delete jsEditorDelete disabled"><img src="img/delete.svg" alt="Delete all">
+                        Delete all</div>
+
+                    <div class="editor__scenario">
+                        Scenario Name
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="editor__slide-list jsEditorSlideList editor__slide-list_empty">
+
+                </div>
+            </div>
+
+        </div>
+
+        <button class="submit jsSubmit disabled">Save scenario <img src="img/arrow.svg" alt="Arrow"></button>
+
+        <div class="modal" style="display: none;" id="modal">
+            <p>Some content</p>
+        </div>
+    </main>
+</body>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+    integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>

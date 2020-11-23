@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="info">
+            <div class="info__title">Scenario Editor</div>
+            <div class="info__txt">Create a custom scenario consisting of slides from different presentations. Just
+                simply drag and drop the desired slides and the scenario is ready.</div>
+
+            <div class="info__btn jsInfoBtn"><img src="img/close.svg" alt="Close"></div>
+        </div>
+
+        <div class="editor">
+            <div class="editor__left">
+                <div class="editor__header">
+                    Select a Presentation
+
+                    <form action="" method="get" class="searchbox">
+                        <input type="text" placeholder="Поиск..." class="searchbox__input" onkeyup="buttonUp();"
+                            required>
+                        <input type="submit" id="search-input" style="display: none">
+                        <label for="search-input" class="searchbox__submit">
+                            <img src="../img/search.svg" alt="Search">
+                        </label>
+                        <span class="searchbox__icon">
+                            <img src="../img/search.svg" alt="Search">
+                        </span>
+                    </form>
+                </div>
+
+                <ul class="editor__selection">
+                    <li class="presentation">
+                        <div class="presentation__img">
+                            <img src="img/pres1.png" alt="">
+                        </div>
+
+                        <span>Coffe Time</span>
+                    </li>
+                    <li class="presentation">
+                        <div class="presentation__img">
+                            <img src="img/pres2.png" alt="">
+                        </div>
+
+                        <span>Cream Candy</span>
+                    </li>
+                    <li class="presentation">
+                        <div class="presentation__img">
+                            <img src="img/pres1.png" alt="">
+                        </div>
+
+                        <span>Coffe Time</span>
+                    </li>
+
+                    <li class="presentation">
+                        <div class="presentation__img">
+                            <img src="img/pres2.png" alt="">
+                        </div>
+
+                        <span>Cream Candy</span>
+                    </li>
+
+                    <li class="presentation">
+                        <div class="presentation__img">
+                            <img src="img/pres1.png" alt="">
+                        </div>
+
+                        <span>Coffe Time</span>
+                    </li>
+
+                    <li class="presentation">
+                        <div class="presentation__img">
+                            <img src="img/pres1.png" alt="">
+                        </div>
+
+                        <span>Coffe Time</span>
+                    </li>
+                    <li class="presentation">
+                        <div class="presentation__img">
+                            <img src="img/pres2.png" alt="">
+                        </div>
+
+                        <span>Cream Candy</span>
+                    </li>
+                    <li class="presentation">
+                        <div class="presentation__img">
+                            <img src="img/pres1.png" alt="">
+                        </div>
+
+                        <span>Coffe Time</span>
+                    </li>
+
+                    <li class="presentation">
+                        <div class="presentation__img">
+                            <img src="img/pres2.png" alt="">
+                        </div>
+
+                        <span>Cream Candy</span>
+                    </li>
+
+                    <li class="presentation">
+                        <div class="presentation__img">
+                            <img src="img/pres1.png" alt="">
+                        </div>
+
+                        <span>Coffe Time</span>
+                    </li>
+
+                    <li class="presentation">
+                        <div class="presentation__img">
+                            <img src="img/pres1.png" alt="">
+                        </div>
+
+                        <span>Coffe Time</span>
+                    </li>
+
+                    <li class="presentation">
+                        <div class="presentation__img">
+                            <img src="img/pres1.png" alt="">
+                        </div>
+
+                        <span>Coffe Time</span>
+                    </li>
+
+                    <li class="presentation">
+                        <div class="presentation__img">
+                            <img src="img/pres1.png" alt="">
+                        </div>
+
+                        <span>Coffe Time</span>
+                    </li>
+
+                    <li class="presentation">
+                        <div class="presentation__img">
+                            <img src="img/pres1.png" alt="">
+                        </div>
+
+                        <span>Coffe Time</span>
+                    </li><li class="presentation">
+                        <div class="presentation__img">
+                            <img src="img/pres1.png" alt="">
+                        </div>
+
+                        <span>Coffe Time</span>
+                    </li>
+
+                    <li class="presentation">
+                        <div class="presentation__img">
+                            <img src="img/pres1.png" alt="">
+                        </div>
+
+                        <span>Coffe Time</span>
+                    </li>
+
+                    <li class="presentation">
+                        <div class="presentation__img">
+                            <img src="img/pres1.png" alt="">
+                        </div>
+
+                        <span>Coffe Time</span>
+                    </li>
+
+                    <li class="presentation">
+                        <div class="presentation__img">
+                            <img src="img/pres1.png" alt="">
+                        </div>
+
+                        <span>Coffe Time</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="editor__right">
+                <div class="editor__header editor__header_right">
+                    <div class="editor__counter">
+                        Current Scenario Slides (<span>0</span>)
+                    </div>
+
+                    <div class="editor__delete jsEditorDelete disabled"><img src="img/delete.svg" alt="Delete all">
+                        Delete all</div>
+
+                    <div class="editor__scenario">
+                        Scenario Name
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="editor__slide-list editor__slide-list_empty">
+
+                </div>
+            </div>
+
+        </div>
+
+        <button class="submit disabled">Save scenario <img src="img/arrow.svg" alt="Arrow"></button>
+    </main>
+</body>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+
+<script src="js/script.js"></script>
+
+</html>
