@@ -1,0 +1,845 @@
+<div style="font-family: arial,sans-serif; color: #1A1A1A;">
+  <meta charset="UTF-8">
+  <div style="height: 0; width: 0;overflow: hidden;margin: 0;padding: 0">
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+
+
+      .spacer__05 {
+        margin-bottom: 0.5vw;
+      }
+
+      .spacer__1 {
+        margin-bottom: 1vw;
+      }
+
+      .spacer__2 {
+        margin-bottom: 2.5vw;
+      }
+
+      .spacer__3 {
+        margin-bottom: 3.3vw;
+      }
+
+      .spacer__4 {
+        margin-bottom: 4vw;
+      }
+
+      .spacer__5 {
+        margin-bottom: 5vw;
+      }
+
+      .spacer__8 {
+        margin-bottom: 8vw;
+      }
+
+
+
+      .wrapper_content {
+        overflow: hidden;
+        padding: 0 2vw;
+      }
+
+
+
+      .forceinput_data .cke_widget_inline {
+        display: block !important;
+      }
+
+
+
+      .text_area .cke_widget_inline {
+        display: block !important;
+        height: inherit;
+      }
+
+
+
+      .block {
+        display: block;
+      }
+
+      .inline {
+        display: inline-block;
+      }
+
+
+
+      .table {
+        display: table;
+        width: 100%;
+      }
+
+      .table_td {
+        display: table-cell;
+      }
+
+
+
+      .text__center {
+        text-align: center;
+      }
+
+      .text__right {
+        text-align: right;
+      }
+
+      .text__default {
+        font-size: 1.2vw;
+        line-height: 1.13em;
+        color: #1A1A1A;
+      }
+
+
+      h1 {
+        font-size: 2vw;
+        line-height: 1.15em;
+        font-weight: bold;
+        color: #1A1A1A;
+      }
+
+      h2 {
+        font-size: 1.7vw;
+        line-height: 1.8em;
+        font-weight: bold;
+        color: #1A1A1A;
+      }
+
+      h3 {
+        font-size: 1.4vw;
+        line-height: 1.1em;
+        font-weight: bold;
+        color: #1A1A1A;
+      }
+
+      h4 {
+        font-size: 1.4vw;
+        line-height: 1.3em;
+        font-weight: normal;
+        color: #1A1A1A;
+        text-decoration: underline;
+        text-align: center;
+      }
+
+      h5 {
+        font-size: 1.4vw;
+        line-height: 1.3em;
+        font-weight: normal;
+        color: #1A1A1A;
+        text-decoration: underline;
+      }
+
+      h6 {
+        font-size: 1.4vw;
+        line-height: 1.1em;
+        font-weight: bold;
+        color: #1A1A1A;
+        padding: 2.2vw 0;
+      }
+
+
+
+      .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .flex_top {
+        display: flex;
+        align-items: flex-start;
+      }
+
+      .flex_bottom {
+        display: flex;
+        align-items: flex-end;
+      }
+
+      .flex_center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .flex_start {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+      }
+
+      .flex_between {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+
+
+      .forceinput {
+        width: 100% !important;
+        background: #00B050 !important;
+        border: 4px solid #00B050 !important;
+        display: block;
+        font-size: 1.2vw !important;
+        line-height: 1.8vw !important;
+        color: #00B050;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+
+
+      button {
+        width: 15vw;
+        height: 3vw;
+        line-height: 2.7vw;
+      }
+
+
+
+      .table_default th {
+        position: relative;
+        width: 10%;
+        font-size: 0.4vw;
+        line-height: 2.4vh;
+        color: transparent;
+        text-align: center;
+        padding: 0.8vw 0.5vw;
+      }
+
+      .table_default th:nth-child(1) {
+        width: 24%;
+      }
+
+      .table_default th:nth-child(2) {
+        width: 16%;
+      }
+
+      .table_default th:nth-child(3) {
+        width: 20%;
+      }
+
+
+      .table_default th:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: -webkit-box;
+        -webkit-box-pack: center;
+        -webkit-box-align: center;
+        font-size: 1.4vw;
+        line-height: 1em;
+        color: #000;
+      }
+
+      .table_default th:nth-child(n+4):after {
+        top: 0;
+        left: 2px;
+        right: 2px;
+        bottom: 0;
+        background: #66b330;
+        border-radius: 8px;
+        font-size: 1.8vw;
+        color: #fff;
+        text-transform: uppercase;
+      }
+
+      .table_default th:nth-child(4):after {
+        content: 'PMC';
+      }
+
+      .table_default th:nth-child(5):after {
+        content: 'CA';
+      }
+
+      .table_default th:nth-child(6):after {
+        content: 'Prio';
+      }
+
+      .table_default th:nth-child(7):after {
+        content: 'Vague';
+      }
+
+      .table_default_4 th:nth-child(6):after {
+        content: 'Vague';
+      }
+
+
+      .table_default td {
+        height: 17vw;
+        border-bottom: 1px solid #333;
+        font-size: 1.8vw;
+        color: #000;
+        text-align: center;
+        padding: 1vw 0.5vw;
+      }
+
+      .table_default td:nth-child(2) {
+        font-size: 1.8vw;
+        line-height: 2.1vw;
+      }
+
+      .table_default td:nth-child(1),
+      .table_default td:nth-child(3) {
+        padding: 1vw 0;
+      }
+
+      .table_default td:nth-child(1) img {
+        height: 13vw;
+        width: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .table_default td:nth-child(3) img {
+        max-width: 85%;
+        height: auto;
+      }
+
+
+      .title_pane {
+        background: #28743C;
+        border-radius: 12px;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+      }
+
+      .service_pane {
+        background: #28743C;
+        border-radius: 12px;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+      }
+
+      tbody {
+        position: relative;
+      }
+
+      tr {
+        page-break-inside: avoid;
+        position: relative;
+      }
+
+
+      @media print {
+        .print-1 {
+          font-size: 5vw !important;
+          line-height: 1.3em !important;
+          padding: 1.5vw 2vw !important;
+        }
+
+        .print-2 {
+          font-size: 2.5vw !important;
+          line-height: 1.3em !important;
+        }
+
+        .print-3 {
+          font-size: 1.2em !important;
+        }
+
+        .print-4 {
+          font-size: 1.2em !important;
+        }
+
+        .print-5 {
+          height: 16vw !important;
+        }
+
+        .table_default th:nth-child(n+4):after {
+          font-size: 3vw !important;
+          line-height: 1.1em !important;
+        }
+
+        .table_default td,
+        .table_default td:nth-child(2) {
+          font-size: 2.8vw !important;
+          line-height: 1.2em !important;
+          padding: 0.5vw !important;
+        }
+
+        .table_default td:nth-child(3) img {
+          max-width: 80% !important;
+        }
+
+        .table_default td:nth-child(1) img {
+          height: 14vw !important;
+        }
+
+      }
+    </style>
+  </div>
+
+  <div class="wrapper_content  spacer__3" style="padding-top: 3vw;">
+    <div class="flex spacer__2"><img class="print-5"
+        src="data:image/png;base64,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"
+        style="height: 12vw;" />
+      <div class="title_pane text__center flex_center print-1"
+        style="width: 80%;height: auto;font-size: 2.3vw;line-height: 3vw;padding: 0.5vw 1vw;">
+        <div>Bl&eacute;dina Vous Propose<br />
+          en
+          <p class="inline" id="date_month_1">Juillet</p>
+          chez&nbsp;{Name}</div>
+      </div>
+    </div>
+
+    <div class="flex_between spacer__3">
+      <div style="width: 45vw; border-radius: 1.2vw; border: 1px solid #00B050; padding: 0.8vw;
+      min-width: 40%;">
+        <p class="spacer__05"><strong class="inline" style="padding-right: 1vw;vertical-align: top;">Responsable de
+            visite:</strong> <strong class="inline">{CORE_CurrentUserName__c}</strong></p>
+
+        <p class="spacer__05"><strong class="inline"
+            style="padding-right: 1vw;vertical-align: top;">T&eacute;l&eacute;phone:</strong> <strong
+            class="inline">{CORE_CurrentUserPhone__c}</strong></p>
+
+        <p class="spacer__05"><strong class="inline" style="padding-right: 1vw;vertical-align: top;">Email:</strong>
+          <strong class="inline">{CORE_CurrentUserEmail__c}</strong></p>
+
+        <p class="spacer__05"><strong class="inline" style="padding-right: 1vw;vertical-align: top">Contact
+            Client:</strong> <strong class="inline">{CORE_MainContact__c}</strong></p>
+      </div>
+
+      <div class="service_pane text__center flex_center print-2"
+        style="font-size: 1.8vw;line-height: 2.5vw;padding: 1vw 2.5vw;margin: 0 1vw;">Valo totale<br />
+        Gain CA</div>
+
+      <div style="font-size: 2.5vw;line-height: 3.3vw;font-weight: bold;color:#152f83;">{CORE_ValorisationDVP__c}</div>
+    </div>
+
+    <div class="rad" style="width: 100%;min-height: 70px;display: flex;align-items: center;border-radius: 1.2vw;border: 1px solid #00B050;font-weight: 700;padding: 0.8vw;
+    margin-bottom: 4.3vw;">
+      <div>COMMENTAIRE:&nbsp;{BLE_BVPComment__c}</div>
+    </div>
+
+    <div class="title_pane text__center flex_center spacer__1 print-2"
+      style="height: 4.2vw;font-size: 1.8vw;line-height: 2vw;border-radius: 8px;"><b>Actualit&eacute;s</b></div>
+
+    <table border="0" cellpadding="0" cellspacing="0" child-table="CORE_AssortmentLineItem__c"
+      class="forcetable table table_default spacer__8" id="forcetable-0">
+      <thead>
+        <tr>
+          <th scope="col">CORE_ProductImageFileName__c</th>
+          <th scope="col">CORE_Product__c</th>
+          <th scope="col">CORE_EAN__c</th>
+          <th scope="col">CORE_PMC__c</th>
+          <th scope="col">CORE_TurnoverDVP__c</th>
+          <th scope="col">BLE_Priority__c</th>
+          <th scope="col">BLE_Wave__c</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+
+        <tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+
+        <tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+
+        <tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+
+        <tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+
+        <tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+
+        <tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+
+        <tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+
+        <tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+
+        <tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+
+        <tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+
+        <tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+
+        <tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr><tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+
+        <tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+
+        <tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr><tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+
+        <tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+
+        <tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr><tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+
+        <tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+
+        <tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr><tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+
+        <tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+
+        <tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr><tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+
+        <tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+
+        <tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr><tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+
+        <tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+
+        <tr>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td><img  src="https://via.placeholder.com/150x140"></td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+
+    <div class="title_pane text__center flex_center spacer__1 print-2"
+      style="height: 4.2vw;font-size: 1.8vw;line-height: 2vw;border-radius: 8px;"><b>Potentiel Business</b></div>
+
+    <table border="0" cellpadding="0" cellspacing="0" child-table="CORE_AssortmentLineItem__c"
+      class="forcetable table table_default spacer__8" id="forcetable-1">
+      <thead>
+        <tr>
+          <th scope="col">CORE_ProductImageFileName__c</th>
+          <th scope="col">CORE_Product__c</th>
+          <th scope="col">CORE_EAN__c</th>
+          <th scope="col">CORE_PMC__c</th>
+          <th scope="col">CORE_TurnoverDVP__c</th>
+          <th scope="col">BLE_Priority__c</th>
+          <th scope="col">BLE_Wave__c</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="title_pane text__center flex_center spacer__1 print-2"
+      style="height: 4.2vw;font-size: 1.8vw;line-height: 2vw;border-radius: 8px;"><b>Ruptures Constat&eacute;es</b>
+    </div>
+
+    <table border="0" cellpadding="0" cellspacing="0" child-table="CORE_AssortmentLineItem__c"
+      class="forcetable table table_default spacer__8" id="forcetable-3">
+      <thead>
+        <tr>
+          <th scope="col">CORE_ProductImageFileName__c</th>
+          <th scope="col">CORE_Product__c</th>
+          <th scope="col">CORE_EAN__c</th>
+          <th scope="col">CORE_PMC__c</th>
+          <th scope="col">CORE_TurnoverDVP__c</th>
+          <th scope="col">BLE_Priority__c</th>
+          <th scope="col">BLE_Wave__c</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="title_pane text__center flex_center spacer__1 print-2"
+      style="height: 4.2vw;font-size: 1.8vw;line-height: 2vw;border-radius: 8px;"><b>Arr&ecirc;ts du Mois</b></div>
+
+    <table border="0" cellpadding="0" cellspacing="0" child-table="CORE_AssortmentLineItem__c"
+      class="table_default_4 forcetable table table_default table_simplified spacer__8" id="forcetable-4">
+      <thead>
+        <tr>
+          <th scope="col">CORE_ProductImageFileName__c</th>
+          <th scope="col">CORE_Product__c</th>
+          <th scope="col">CORE_EAN__c</th>
+          <th scope="col">CORE_PMC__c</th>
+          <th scope="col">CORE_TurnoverDVP__c</th>
+          <th scope="col" style="opacity: 0;">CORE_Product__c</th>
+          <th scope="col" style="opacity: 0;">CORE_EAN__c</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div style="margin-right: 3vw;">
+      <p class="spacer__05 print-3" style="font-size: 0.6em"><strong class="inline"><em>PMC: Prix Marketing
+            Conseill&eacute; fourni &agrave; titre indicatif. Seul le distributeur reste libre des prix pratiqu&eacute;s
+            dans ses points de vente.</em></strong></p>
+    </div>
+  </div>
+
+  <div style="height: 0; width: 0;overflow: hidden">
+    <script>
+      var arraytMonth = ["Janvier", "Fevrier", "Mars", "Avril", "Mai", "Juin", "Juillet", "Aout", "Septembre", "Octobre", "Novembre", "Decembre"];
+      var currentDate = new Date();
+      var currentMonth = arraytMonth[currentDate.getMonth()];
+
+      document.getElementById("date_month_1").innerHTML = currentMonth;
+    </script>
+  </div>
+</div>
